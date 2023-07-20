@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9ff0dc5f4b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a class="navbar-brand" href="#">Personal Portfolio</a>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                     <p>Student</p>
+                     <h1>Hi I'm <span>Reshma</span><br>From Vignan</h1>
+                </div>
+            </div>
+<!--------------------about---------------------->
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello Everyone,Iam Ampolu Reshma Sri,currently a final year Electronics and Communication engineering
+                           graduate from Vignan's Institute of Engineering for Women.Iam good at critical thinking and communication.
+                           Iam serving as a Campus Recruitment Training coordinator for my B.Tech degree.Iam passionate in programming and I'm a person who
+                           likes to tackle challenges.I constantly strive to be the best version of myself.</p>
+                           <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('personality traits')">Personality Traits</p>
+                           </div>
+                           <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>C,Python,Java</li>
+                                <li><span>Scripting Languages</span><br>SQL,CSS,HTML</li>
+                                <li><span>Applications</span><br>Microsoft Office</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-Present</span><br>B.Tech in ECE at Vignan's Institute of Engineering For Women</li>
+                                <li><span>2018-2020</span><br>Intermediate (MPC) at Sri Chaitanya Junior College</li>
+                                <li><span>2017-2018</span><br>10th class at Krishnaveni English Medium School</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="personality traits">
+                            <ul>
+                                <li><span>Team Work</span><br>I can work in a team effectively</li>
+                                <li><span>Independent</span><br>From my life i learnt to be independent</li>
+                                <li><span>Time Management</span><br>I can manage time in an efficient way</li>
+                            </ul>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------Projects------------------>
+        <div id="Projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="Projects-list">
+                    <div>
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <h2>Automatic Control of Street Lights</h2>
+                        <p>It is designed to turn on or to turn off street lights automatically.It is developed
+                            using keil and proteus softwares.It checks the amount of light,If light is 80% available
+                            ,lights will turn off automatically.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-bluetooth"></i>
+                        <h2>Wireless Bluetooth Controlled LED Notice Board</h2>
+                        <p>The noticeboard is controlled by a android device through Bluetooth connectivity and 
+                            displays the message on it.It is enhanced to display the latest information through
+                            an android application.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <h2>Automatic Roomlighting System</h2>
+                        <p>It is microcontroller based that automatically turn on or off the lights in a room.
+                            Electricity,being one of the most important resources must be utilized carefully.
+                            The project implemented here is one where microcontroller based system automatically
+                            controls the room lights.Such automation is very useful.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------------Portfilio------------------------>
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="Work-list">
+                    <div class="Work">
+                        <img src="images/work-1.jpg">
+                        <div class="layer">
+                            <h3> Part of Google Development students Club</h3>
+                            <p>As a member of GDSC, I took part in a number of programmes run by Google.
+                                It's a great platform for pupils to develop their abilities.I enhanced my
+                            coding and critical thinking skills through the activities conducted
+                        by the Google developoers students Club.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="Work">
+                        <img src="images/work-2.jpg">
+                        <div class="layer">
+                            <h3>A Member of IETE</h3>
+                            <p>The Institution of electronics and telecommunication provides leadership in 
+                                Scientific and Technical areas of direct importance to the national development
+                                 and economy.By being member of IETE student chapter,I leant many things related to
+                                my core filed as iam an ECE student.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="Work">
+                        <img src="images/work-3.jpg">
+                        <div class="layer">
+                            <h3>Campus Recruitment Training Coordinator</h3>
+                            <p>I had various difficulties when working as a CRT coordinator for my bachelor of 
+                                technology degree.I gained leadership abilities, patience, and time management
+                                 from them.Everyday i used to meet new people and interact,this 
+                                 improved my communication skills.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+<!----------------contact------------------------------------->
+<div id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>reshmasriampolu@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>8019730191</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://www.linkedin.com/in/reshmasriampolu"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright @Reshma Made with <i class="fa-solid fa-heart"></i> from Vignan</p>
+    </div>
+</div>
+
+
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyfhe5V-x3cYcQ8nIReqtp9CqrJHDkgD4VjODQAjS7lkKs2LZbDAkexCUVasariRHD7Pg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
